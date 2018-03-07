@@ -1,4 +1,5 @@
 # DirectoryToPDF
 Takes a directory of images and makes a PDF
 
-Using PDF File Writer C#
+Using PDFFileWriter.NET
+https://github.com/jeske/PdfFileWriter.NET
