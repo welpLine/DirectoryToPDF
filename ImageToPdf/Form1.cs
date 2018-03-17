@@ -30,24 +30,49 @@ namespace ImageToPdf
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if(folderDiag.SelectedPath != null)
+            if (folderDiag.SelectedPath != null && folderDiag.SelectedPath != "")
             {
+                textBox1.Text = "Adding pages";
                 Image[] pages = System.IO.Directory.GetFiles(folderDiag.SelectedPath)
                         .Select(file => System.Drawing.Image.FromFile(file))
                         .ToArray();
-                PdfDocument book = new PdfDocument("test.pdf");
-                foreach (Image i in pages)
+                string title = titleBox.Text == "Title" ? "untitled" : titleBox.Text;
+                PdfDocument book = new PdfDocument(title + ".pdf");
+                PdfPage page;
+                PdfContents contents;
+                PdfImage pic;
+
+                for (int i = 0; i < pages.Length; i++)
                 {
-                    //PdfPage page = new PdfPage(book);
-                    //PdfContents contents = new PdfContents(page);
-                    PdfImage Image = new PdfImage(book, i);
+                    Image source = pages[i];
+                    double height = source.Height;
+                    double width = source.Width;
+
+                    page = new PdfPage(book, width, height);
+                    contents = new PdfContents(page);
+                    contents.SaveGraphicsState();
+                    pic = new PdfImage(book, source);
+                    contents.DrawImage(pic, 0, 0, width, height);
+                    contents.RestoreGraphicsState();
+                    contents.CommitToPdfFile(true);
                 }
                 book.CreateFile();
                 textBox1.Text = "Book created";
-            } else
+                pages = null;
+                book = null;
+                page = null;
+                contents = null;
+                pic = null;
+            }
+            else
             {
                 textBox1.Text = "No directory selected";
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
