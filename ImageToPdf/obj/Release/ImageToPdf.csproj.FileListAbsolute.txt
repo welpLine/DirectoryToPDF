@@ -1,0 +1,12 @@
+C:\Users\smoka\Source\Repos\DirectoryToPDF\ImageToPdf\bin\Release\ImageToPdf.exe.config
+C:\Users\smoka\Source\Repos\DirectoryToPDF\ImageToPdf\bin\Release\ImageToPdf.exe
+C:\Users\smoka\Source\Repos\DirectoryToPDF\ImageToPdf\bin\Release\ImageToPdf.pdb
+C:\Users\smoka\Source\Repos\DirectoryToPDF\ImageToPdf\bin\Release\PdfFileWriter.dll
+C:\Users\smoka\Source\Repos\DirectoryToPDF\ImageToPdf\obj\Release\ImageToPdf.Form1.resources
+C:\Users\smoka\Source\Repos\DirectoryToPDF\ImageToPdf\obj\Release\ImageToPdf.Properties.Resources.resources
+C:\Users\smoka\Source\Repos\DirectoryToPDF\ImageToPdf\obj\Release\ImageToPdf.csproj.GenerateResource.cache
+C:\Users\smoka\Source\Repos\DirectoryToPDF\ImageToPdf\obj\Release\ImageToPdf.csproj.CoreCompileInputs.cache
+C:\Users\smoka\Source\Repos\DirectoryToPDF\ImageToPdf\obj\Release\ImageToPdf.csproj.CopyComplete
+C:\Users\smoka\Source\Repos\DirectoryToPDF\ImageToPdf\obj\Release\ImageToPdf.exe
+C:\Users\smoka\Source\Repos\DirectoryToPDF\ImageToPdf\obj\Release\ImageToPdf.pdb
+C:\Users\smoka\Source\Repos\DirectoryToPDF\ImageToPdf\obj\Release\ImageToPdf.csprojResolveAssemblyReference.cache

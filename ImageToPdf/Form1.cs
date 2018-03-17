@@ -42,16 +42,15 @@ namespace ImageToPdf
                 PdfContents contents;
                 PdfImage pic;
 
-                for (int i = 0; i < pages.Length; i++)
+                foreach (Image i in pages)
                 {
-                    Image source = pages[i];
-                    double height = source.Height;
-                    double width = source.Width;
+                    double height = i.Height;
+                    double width = i.Width;
 
                     page = new PdfPage(book, width, height);
                     contents = new PdfContents(page);
                     contents.SaveGraphicsState();
-                    pic = new PdfImage(book, source);
+                    pic = new PdfImage(book, i);
                     contents.DrawImage(pic, 0, 0, width, height);
                     contents.RestoreGraphicsState();
                     contents.CommitToPdfFile(true);
