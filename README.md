@@ -5,5 +5,6 @@ Note: this is very barebones and was just quickly made to stich together images 
 ## Updates
 Possibly might implement more functionaility in the future
 
+## Content used
 Using PdfFileWriter.NET
 https://github.com/jeske/PdfFileWriter.NET
